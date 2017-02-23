@@ -24,7 +24,7 @@ html,body{
 }
 @keyframes rain {
   0% {
-    bottom: 0;
+    /*bottom: 0;*/
   }
   50% {
     bottom: 600px;
