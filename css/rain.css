@@ -24,34 +24,91 @@ html,body{
 }
 @keyframes rain {
   0% {
-    /*bottom: 0;*/
-  }
-  25% {
-    bottom: 500px;
-  }
-  50% {
-    bottom: 250px;
-  }
-  100% {
-    bottom: 0;
-  }
-}
-.rain_item>.ocean{
-  width: 5%;
-  display: inline-block;
-  text-align: center;
-  justify-content: space-between;
+   /*bottom: 0;*/
+ }
+ 25% {
+   bottom: 500px;
+ }
+ 50% {
+   bottom: 250px;
+ }
+ 100% {
+   bottom: 0;
+ }
 }
 .ocean div{
-  animation: ocean  easy;
+  animation: ocean 8s ease;
   position: relative;
-  top: 550px;
-  animation-duration: 5s; 
-}
+  top: 60px;
+  }
 .ocean>div>img{
   width: 100%;
 }
 @keyframes ocean {
-  from {width: 100px;}
-  to {width: 200px;}
+  0% {
+    bottom: 180px;
+  }
+  25% {
+    top: 140px;
+  }
+  50% {
+    top: 100px;
+  }
+  100% {
+    top: 60px;
+  }
+}
+.cloud{
+  width: 100%;
+  position: relative;
+  top:0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.cloud div{
+  width: 18%;
+  animation: cloud 10s ease-out infinite;
+  position: relative;
+  text-align: center;
+}
+.cloud img{
+  width: 60%;
+}
+@keyframes cloud {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.5)
+  }
+  100% {
+    transform: scale(1.8)
+  }
+}
+.boat{
+  width: 100%;
+  position: relative;
+  top:200px;
+  left: 0;
+}
+.boat div{
+  width: 20%;
+  animation: boat 10s linear infinite;
+  position: relative;
+  animation-delay: 3s;
+}
+.boat img{
+  width: 100%;
+}
+@keyframes boat {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 500px;
+  }
+  100% {
+    left: 1000px;
+  }
 }
