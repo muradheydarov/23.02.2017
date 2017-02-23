@@ -68,7 +68,7 @@ html,body{
 }
 .cloud div{
   width: 18%;
-  animation: cloud 10s ease-out infinite;
+  animation: cloud 3s ease-out infinite;
   position: relative;
   text-align: center;
 }
