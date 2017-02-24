@@ -3,7 +3,7 @@ html,body{
   padding: 0;
 }
 .rain{
-  height: 700px;
+  height: 900px;
   background: url(../img/background.png);
   background-size: cover;
 }
